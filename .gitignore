@@ -105,3 +105,4 @@ dist
 
 # Jet Brains
 .idea
+/.yarn/
