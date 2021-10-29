@@ -6,11 +6,13 @@
 // Yellow - used for temporary alert, caution, warnings.
 // Blue  - used for information.
 
+export type roles = 'primary' | 'secondary' | 'tertiary' | 'alert' | 'warn' | 'inverse' | 'ghost';
+
 export type schemes = 'monochromatic' | 'analogous' | 'complimentary' | 'splitComplimentary' | 'triadic';
 
 export type categories = 'jewel' | 'pastel' | 'earth' | 'neutral' | 'florescent' | 'shades';
 
-export const saturationRangeMap: { [id in categories]: string } = {
+export const saturationRangeMap: Record<categories, string> = {
   jewel: '73-83',
   pastel: '14-21',
   earth: '36-41',
@@ -19,7 +21,7 @@ export const saturationRangeMap: { [id in categories]: string } = {
   shades: '0-0'
 };
 
-export const brightnessRangeMap: { [id in categories]: string } = {
+export const brightnessRangeMap: Record<categories, string> = {
   jewel: '56-76',
   pastel: '89-96',
   earth: '36-77',
