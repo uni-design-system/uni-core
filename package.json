@@ -1,7 +1,4 @@
 {
   "name": "uni",
-  "packageManager": "yarn@3.0.2",
-  "workspaces": [
-    "packages/*"
-  ]
+  "packageManager": "yarn@3.0.2"
 }
