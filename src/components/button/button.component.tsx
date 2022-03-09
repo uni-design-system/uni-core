@@ -1,22 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import useTheme from '../../core/theme/theme.hook';
 
-export interface IButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
-  backgroundColor?: string;
-  color?: string;
+export interface ButtonProps {
+  children: ReactNode,
+  disabled?: boolean
 }
 
-export const Button: React.FunctionComponent<IButtonProps> = (props) => {
-  const { children, backgroundColor, color, style } = props;
+export function Button({ children, disabled = false }: ButtonProps): JSX.Element {
 
-  let _style: React.CSSProperties = style || {};
-
-  /** Override Defaults */
-  if (backgroundColor && _style) _style.backgroundColor = backgroundColor;
-  if (color && _style) _style.color = color;
+  const theme = useTheme();
 
   return (
-    <button style={_style} {...props}>
-      {children}
+    <button disabled={disabled}>
+      {children} {theme.name}
     </button>
-  );
-};
+  )
+}
