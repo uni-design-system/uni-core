@@ -23,7 +23,7 @@ export interface IColor {
   brightnessRangeMap?: IRange;
 
   /* HSL */
-  hue: number;
+  hue: number | undefined;
   saturation?: number;
   lightness?: number;
 
