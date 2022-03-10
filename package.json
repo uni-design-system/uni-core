@@ -1,5 +1,5 @@
 {
-  "name": "uni",
+  "name": "facade",
   "packageManager": "yarn@3.0.2",
   "devDependencies": {
     "@babel/core": "^7.17.5",
@@ -22,9 +22,28 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "dependencies": {},
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  }
+  },
+  "description": "facade design system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaenglish/facade.git"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "ux",
+    "design system"
+  ],
+  "author": "George English",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaenglish/facade/issues"
+  },
+  "homepage": "https://github.com/gaenglish/facade#readme"
 }
