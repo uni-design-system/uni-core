@@ -1,11 +1,6 @@
-import { size } from '../base.types';
-
-
-
 export type color = 'white' | 'black' | 'red' | 'blue' | 'green';
 
 export type style = 'solid' | 'outline' | 'gradient';
-
 
 export type display = 'logo'
   | 'alert'

@@ -1,8 +1,6 @@
 // https://designerup.co/blog/ui-design-choosing-color-palettes/
 // https://designerup.co/blog/practical-guide-to-perfect-ui-color-palettes/
 
-
-
 import { IRange } from './color.model';
 
 export type colorStyles = 'solid' | 'transparent' | 'gradient';
@@ -74,3 +72,5 @@ export const utilHues: Record<utilColorRoles, IRange> = {
   success: { low: 90, high: 150, default: 120 }, // green
   info: { low: 200, high: 260, default: 240 }, // blue
 }
+
+export type ColorToken = 'primary';
