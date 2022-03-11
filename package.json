@@ -1,6 +1,6 @@
 {
-  "name": "uni-core",
-  "description": "UNI Design System core dependancies.",
+  "name": "@uni-design-system/uni-core",
+  "description": "UNI Design System core dependencies.",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
