@@ -1,2 +1,8 @@
-
-export type BackgroundType = 'solid' | 'gradient' | 'transparent' | 'image' | 'movie';
+export type BackgroundType =
+  | 'Solid'
+  | 'Gradient'
+  | 'Blur'
+  | 'Image'
+  | 'Transparent'
+  | 'Layer'
+  ;

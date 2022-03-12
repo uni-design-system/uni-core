@@ -1,9 +1,9 @@
 import { IGradient } from '../gradients/gradient.model';
 import { IColor } from '../color/color.model';
-import { backgrounds } from './background.types';
+import { BackgroundType } from './background.types';
 
 export interface IBackground {
-  type: backgrounds;
+  type: BackgroundType;
   color: IColor;
   gradient: IGradient;
   image: string;

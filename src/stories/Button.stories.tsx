@@ -1,20 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
-// @ts-ignore
-import { withThemes } from '@react-theming/storybook-addon';
-
 import { Button } from './Button';
-import { BuiltInThemes, DefaultThemeId } from '../core/theme/theme.records';
-import { ThemeProvider } from '../core/theme/theme.provider';
-import { ThemeProps } from '../core/theme/theme.model';
-
-// create decorator
-const themingDecorator = withThemes(ThemeProvider, [DefaultThemeId]);
-
-const providerFn = ({theme, children}: any & ThemeProps) => {
-  return <ThemeProvider themeId={theme.id} themes={BuiltInThemes}>{children}</ThemeProvider>;
-};
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
