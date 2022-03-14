@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { DefaultThemeId } from './theme.records'
-import { ThemeModel } from './theme.model';
+import { Theme } from './theme.model';
 import ThemeContext from './theme.context';
 
 const STORAGE_KEY = 'THEME_ID';
 
 interface ThemeProviderProps {
   themeId: string;
-  themes: Record<string, ThemeModel>;
+  themes: Record<string, Theme>;
   children?: React.ReactChild;
 }
 

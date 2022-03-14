@@ -1,7 +1,7 @@
-import { IColor } from '../color/color.model';
+import { Color } from '../color/color.model';
 import { MaskingShape } from './masking.types';
 
-export interface IMasking {
-  background: IColor;
+export interface Masking {
+  background: Color;
   shape: MaskingShape;
 }

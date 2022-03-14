@@ -1,10 +1,10 @@
-import { IGradient } from '../gradients/gradient.model';
-import { IColor } from '../color/color.model';
+import { Gradient } from '../gradients/gradient.model';
+import { Color } from '../color/color.model';
 import { BackgroundType } from './background.types';
 
-export interface IBackground {
+export interface Background {
   type: BackgroundType;
-  color: IColor;
-  gradient: IGradient;
+  color: Color;
+  gradient: Gradient;
   image: string;
 }

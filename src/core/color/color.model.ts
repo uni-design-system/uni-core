@@ -7,7 +7,7 @@ import {
 
 // hsl(hue, saturation, lightness)
 
-export interface IColor {
+export interface Color {
 
   /* Meta */
   scheme?: colorSchemes;

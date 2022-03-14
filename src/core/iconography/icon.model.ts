@@ -1,8 +1,8 @@
-import { IColor } from '../color/color.model';
-import { IMasking } from '../masking/masking.model';
+import { Color } from '../color/color.model';
+import { Masking } from '../masking/masking.model';
 
 export interface Icon {
-  background: IColor;
-  foreground: IColor;
-  mask: IMasking;
+  background: Color;
+  foreground: Color;
+  mask: Masking;
 }

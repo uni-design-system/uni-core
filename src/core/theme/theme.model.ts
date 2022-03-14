@@ -1,11 +1,11 @@
 
 export interface ThemeProps {
   themeId?: string;
-  themes?: Record<string, ThemeModel>;
+  themes?: Record<string, Theme>;
   setTheme?: any;
 }
 
-export interface ThemeModel {
+export interface Theme {
   name: string;
   id: string;
   colors: Record<string, string>;

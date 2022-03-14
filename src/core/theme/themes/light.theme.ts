@@ -1,6 +1,6 @@
-import { ThemeModel } from '../theme.model';
+import { Theme } from '../theme.model';
 
-export const LightTheme: ThemeModel = {
+export const LightTheme: Theme = {
   id: 'LightTheme',
   name: 'Light Theme',
   colors: {

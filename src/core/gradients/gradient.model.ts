@@ -1,7 +1,7 @@
-import { IColor } from '../color/color.model';
+import { Color } from '../color/color.model';
 
-export interface IGradient {
-  defaultColor: IColor;
+export interface Gradient {
+  defaultColor: Color;
   degee: number,
-  colors: Record<string, IColor>
+  colors: Record<string, Color>
 }

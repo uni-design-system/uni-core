@@ -1,7 +1,7 @@
-import { IColor } from './color.model';
+import { Color } from './color.model';
 import { colorCategories, colorRoles, roleHues } from './color.types';
 
-export function hslColor(c: IColor): string {
+export function hslColor(c: Color): string {
   return `hsl(${c.hue}, ${c.saturation}, ${c.lightness}, ${c.alpha})`;
 }
 

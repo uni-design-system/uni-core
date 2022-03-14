@@ -1,9 +1,9 @@
 import React from 'react';
 import ThemeContext from './theme.context';
-import { ThemeModel} from './theme.model';
+import { Theme} from './theme.model';
 import { LightTheme } from './themes/light.theme';
 
-export default function useTheme(): ThemeModel {
+export default function useTheme(): Theme {
 
   const themeProps = React.useContext(ThemeContext);
 
