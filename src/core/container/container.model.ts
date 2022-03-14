@@ -1,8 +1,8 @@
-import { BackgroundType } from '../backgrounds/background.types';
-import { BorderWidth } from '../border/border.types';
-import { ColorToken } from '../color/color.types';
+import { BackgroundType } from '../backgrounds';
+import { BorderWidth } from '../border';
+import { ColorToken } from '../color';
 import { Apply, HorizontalAlign, RadiusApply, Size } from '../core.types';
-import { ShadowStyle } from '../shadow/shadow.types';
+import { ShadowStyle } from '../shadow';
 
 export interface ContainerProps {
   maxWidth?: number;
