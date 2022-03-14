@@ -1,7 +1,7 @@
-import { Color } from '../color/color.model';
+import { Color } from '../color';
 
 export interface Gradient {
   defaultColor: Color;
-  degee: number,
+  degree: number,
   colors: Record<string, Color>
 }

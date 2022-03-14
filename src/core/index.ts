@@ -9,4 +9,5 @@ export * from './layout';
 export * from './masking';
 export * from './shadow';
 export * from './typography';
+export * from './flex';
 
