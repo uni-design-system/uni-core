@@ -1,19 +1,28 @@
 // https://designerup.co/blog/ui-design-choosing-color-palettes/
 // https://designerup.co/blog/practical-guide-to-perfect-ui-color-palettes/
 
-import { IRange } from './color.model';
+import { Range } from './color.model';
 
 export type colorStyles = 'solid' | 'transparent' | 'gradient';
 
-export type colorSchemes = 'monochromatic'
+export type ColorOutput =
+  | 'HEX'
+  | 'RGB'
+  | 'RGBA'
+  | 'HSL'
+  | 'HSLA'
+  ;
+
+export type colorSchemes =
+  | 'monochromatic'
   | 'analogous'
   | 'complimentary'
   | 'splitComplimentary'
   | 'triadic'
   ;
 
-
-export type colorCategories = 'jewel'
+export type colorCategories =
+  | 'jewel'
   | 'pastel'
   | 'earth'
   | 'neutral'
@@ -21,7 +30,7 @@ export type colorCategories = 'jewel'
   | 'shades'
   ;
 
-export const saturationRanges: Record<colorCategories, IRange> = {
+export const saturationRanges: Record<colorCategories, Range> = {
   jewel: { low: 73, high: 83 },
   pastel: { low: 14, high: 21 },
   earth: { low: 36, high: 41 },
@@ -30,7 +39,7 @@ export const saturationRanges: Record<colorCategories, IRange> = {
   shades: { low: 0, high: 0 },
 };
 
-export const lightnessRanges: Record<colorCategories, IRange> = {
+export const lightnessRanges: Record<colorCategories, Range> = {
   jewel: { low: 56, high: 76 },
   pastel: { low: 89, high: 96 },
   earth: { low: 36, high: 77 },
@@ -58,7 +67,7 @@ export type colorRoles = 'primary'
   | 'ghost'
   ;
 
-export const roleHues: Record<colorRoles, IRange> = {
+export const roleHues: Record<colorRoles, Range> = {
   primary: { low: 73, high: 83, default: 0 },
   secondary: { low: 14, high: 21, default: 0 },
   tertiary: { low: 36, high: 41, default: 0 },
@@ -66,7 +75,7 @@ export const roleHues: Record<colorRoles, IRange> = {
   ghost: { low: 0, high: 0, default: 0 },
 }
 
-export const utilHues: Record<utilColorRoles, IRange> = {
+export const utilHues: Record<utilColorRoles, Range> = {
   warn: { low: 320, high: 20, default: 0 }, // red
   alert: { low: 40, high: 70, default: 60 }, // yellow
   success: { low: 90, high: 150, default: 120 }, // green

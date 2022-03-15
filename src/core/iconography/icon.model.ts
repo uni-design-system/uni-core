@@ -1,5 +1,5 @@
-import { Color } from '../color/color.model';
-import { Masking } from '../masking/masking.model';
+import { Color } from '../color';
+import { Masking } from '../masking';
 
 export interface Icon {
   background: Color;

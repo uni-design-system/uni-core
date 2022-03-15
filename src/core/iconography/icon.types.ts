@@ -2,7 +2,8 @@ export type color = 'white' | 'black' | 'red' | 'blue' | 'green';
 
 export type style = 'solid' | 'outline' | 'gradient';
 
-export type display = 'logo'
+export type display =
+  | 'logo'
   | 'alert'
   | 'warn'
   | 'disabled'
@@ -15,7 +16,8 @@ export type display = 'logo'
   | 'hide'
 ;
 
-export type actionable = 'add'
+export type actionable =
+  | 'add'
   | 'create'
   | 'copy'
   | 'edit'
@@ -33,7 +35,8 @@ export type actionable = 'add'
   | 'hide'
 ;
 
-export type behavior = 'open'
+export type behavior =
+  | 'open'
   | 'expand'
   | 'collapse'
 ;
@@ -46,7 +49,8 @@ export type messaging = 'alert'
 ;
 
 
-export type usage = 'logo'
+export type usage =
+  | 'logo'
   | 'alert'
   | 'chat'
   | 'down'

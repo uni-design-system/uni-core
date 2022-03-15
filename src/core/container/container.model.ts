@@ -1,4 +1,4 @@
-import { BackgroundType } from '../backgrounds';
+import { BackgroundType } from '../background';
 import { BorderWidth } from '../border';
 import { ColorToken } from '../color';
 import { Apply, HorizontalAlign, RadiusApply, Size } from '../core.types';

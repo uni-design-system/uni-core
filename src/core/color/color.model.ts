@@ -16,11 +16,11 @@ export interface Color {
   category?: colorCategories;
 
   /* Gradients */
-  GradientPosition?: IGradientPosition;
+  GradientPosition?: GradientPosition;
 
   /* Ranges */
-  saturationRange?: IRange;
-  brightnessRangeMap?: IRange;
+  saturationRange?: Range;
+  brightnessRangeMap?: Range;
 
   /* HSL */
   hue: number | undefined;
@@ -31,11 +31,11 @@ export interface Color {
   alpha: number;
 }
 
-export interface IGradientPosition {
+export interface GradientPosition {
   value: string;
 }
 
-export interface IRange {
+export interface Range {
   low: number;
   high: number;
   default?: number;

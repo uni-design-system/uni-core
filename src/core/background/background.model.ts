@@ -1,5 +1,5 @@
-import { Gradient } from '../gradients/gradient.model';
-import { Color } from '../color/color.model';
+import { Gradient } from '../gradient';
+import { Color } from '../color';
 import { BackgroundType } from './background.types';
 
 export interface Background {
