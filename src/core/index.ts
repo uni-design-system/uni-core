@@ -1,3 +1,4 @@
+export * from './core.types'
 export * from './background';
 export * from './theme';
 export * from './iconography';
