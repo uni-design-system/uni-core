@@ -82,6 +82,13 @@ export const utilHues: Record<utilColorRoles, Range> = {
   info: { low: 200, high: 260, default: 240 }, // blue
 }
 
+export type ColorModes =
+  | 'base'
+  | 'hover'
+  | 'active'
+  | 'disabled'
+  ;
+
 export type ColorToken =
   | 'background'
   | 'background-active'

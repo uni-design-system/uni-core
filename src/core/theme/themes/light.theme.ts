@@ -1,13 +1,8 @@
 import { Theme } from '../theme.model';
+import { BaseTheme } from './base.theme';
 
 export const LightTheme: Theme = {
+  ...BaseTheme,
   id: 'LightTheme',
-  name: 'Light Theme',
-  colors: {
-    primary: '#35A7FF',
-    secondary: '#38618C',
-    error: '#FFE74C',
-    warn: '#FF5964',
-    background: '#FFFFFF'
-  }
+  name: 'Light Theme'
 }
