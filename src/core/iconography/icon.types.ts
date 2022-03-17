@@ -1,9 +1,9 @@
-export type color = 'white' | 'black' | 'red' | 'blue' | 'green';
+export type IconStyle =
+  | 'solid'
+  | 'outline'
+  ;
 
-export type style = 'solid' | 'outline' | 'gradient';
-
-export type display =
-  | 'logo'
+export type IconToken =
   | 'alert'
   | 'warn'
   | 'disabled'
@@ -11,12 +11,6 @@ export type display =
   | 'user'
   | 'back'
   | 'next'
-  | 'unlock'
-  | 'view'
-  | 'hide'
-;
-
-export type actionable =
   | 'add'
   | 'create'
   | 'copy'
@@ -24,7 +18,6 @@ export type actionable =
   | 'disable'
   | 'save'
   | 'pin'
-  | 'fav'
   | 'tag'
   | 'update'
   | 'archive'
@@ -33,31 +26,17 @@ export type actionable =
   | 'unlock'
   | 'view'
   | 'hide'
-;
-
-export type behavior =
   | 'open'
   | 'expand'
   | 'collapse'
-;
-
-export type messaging = 'alert'
   | 'info'
   | 'success'
-  | 'warn'
   | 'warning'
-;
-
-
-export type usage =
   | 'logo'
-  | 'alert'
   | 'chat'
   | 'down'
   | 'favorite'
-  | 'info'
   | 'location'
-  | 'lock'
   | 'message'
   | 'profile'
   | 'question'
@@ -67,6 +46,19 @@ export type usage =
   | 'send'
   | 'settings'
   | 'share'
-  | 'unlock'
   | 'up'
-;
+  | 'play'
+  | 'stop'
+  | 'forward'
+  | 'beginning'
+  | 'plus'
+  | 'minus'
+  | 'more'
+  | 'details'
+  | 'call'
+  | 'video'
+  | 'inbox'
+  | 'mail'
+  | 'comment'
+  | 'home'
+  ;
