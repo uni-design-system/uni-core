@@ -1,7 +1,7 @@
 {
   "name": "@uni-design-system/uni-core",
   "description": "UNI Design System core dependencies.",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uni-design-system/uni-core.git"
@@ -14,8 +14,7 @@
   "scripts": {
     "build": "rm -rf dist/ && yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-    "publish": "yarn build && npm publish"
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
   },
   "keywords": [
     "ui",
