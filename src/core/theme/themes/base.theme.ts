@@ -4,11 +4,34 @@ export const BaseTheme: Theme = {
   id: 'BaseTheme',
   name: 'Base Theme',
   colors: {
-    primary: '#35A7FF',
-    secondary: '#38618C',
-    error: '#FFE74C',
-    warn: '#FF5964',
-    background: '#FFFFFF'
+    'primary': '#6750A4',
+    'on-primary': '#FFFFFF',
+    'primary-container': '#EADDFF',
+    'on-primary-container': '#21005E',
+    'secondary': '#625B71',
+    'on-secondary': '#FFFFFF',
+    'secondary-container': '#E8DEF8',
+    'on-secondary-container': '#1E192B',
+    'tertiary': '#7D5260',
+    'on-tertiary': '#FFFFFF',
+    'tertiary-container': '#FFD8E4',
+    'on-tertiary-container': '#370B1E',
+    'error': '#B3261E',
+    'on-error': '#FFFFFF',
+    'error-container': '#F9DEDC',
+    'on-error-container': '#370B1E',
+    'background': '#FFFBFE',
+    'on-background': '#1C1B1F',
+    'surface': '#FFFBFE',
+    'on-surface': '#1C1B1F',
+    'surface-variant': '#E7E0EC',
+    'on-surface-variant': '#49454E',
+    'outline': '#79747E',
+    'shadow': '#000000',
+    'surface-tint': '#6750A4',
+    'inverse-surface': '#313033',
+    'inverse-on-surface': '#F4EFF4',
+    'inverse-primary': '#D0BCFF'
   },
   typography: {
     'headline-1': {
@@ -43,22 +66,22 @@ export const BaseTheme: Theme = {
       letterSpacing: 0.15
     },
     'body-1-long': {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 16,
       lineHeight: 22
     },
     'body-1-short': {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 16,
       lineHeight: 24
     },
     'body-2-long': {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 14,
       lineHeight: 18
     },
     'body-2-short': {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 14,
       lineHeight: 20
     },
@@ -78,7 +101,7 @@ export const BaseTheme: Theme = {
       letterSpacing: 0.1
     },
     label: {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 14
     },
     button: {
@@ -88,7 +111,7 @@ export const BaseTheme: Theme = {
       textTransform: 'uppercase'
     },
     caption: {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 12,
       letterSpacing: 0.4
     },
@@ -99,15 +122,15 @@ export const BaseTheme: Theme = {
       textTransform: 'uppercase'
     },
     paragraph: {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 16
     },
     quote: {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 16
     },
     note: {
-      fontFamily: 'san-serif',
+      fontFamily: 'Roboto',
       fontSize: 14,
       fontStyle: 'italic'
     }

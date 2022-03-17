@@ -1,4 +1,5 @@
 import { TextRole, TextStyle } from '../typography';
+import { ColorToken } from '../color';
 
 export interface ThemeProps {
   themeId?: string;
@@ -9,6 +10,6 @@ export interface ThemeProps {
 export interface Theme {
   name: string;
   id: string;
-  colors: Record<string, string>;
+  colors: Record<ColorToken, string>;
   typography: Record<TextRole, TextStyle>
 }
