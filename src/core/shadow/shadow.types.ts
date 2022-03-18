@@ -1,9 +1,10 @@
-export type ShadowStyle =
-  | 'Flat'
-  | 'Raised'
-  | 'Focussed'
-  | 'Pressed'
-  | 'Modal'
-  | 'Navigation'
-  | 'Drawer'
+// Shadows styles are listed in order of elevation, low to high.
+export type ShadowElevation =
+  | 'flat'
+  | 'pressed'
+  | 'raised'
+  | 'focussed'
+  | 'navigation'
+  | 'drawer'
+  | 'modal'
   ;
