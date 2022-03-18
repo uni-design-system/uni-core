@@ -1,8 +1,10 @@
 import { FontWeight, TextDecoration, TextTransform } from './typography.types';
+import { Size } from '../core.types';
 
 export interface TextStyle {
   fontFamily: string;
   fontSize: number;
+  fontScale?: Record<Size, number>
   fontWeight?: FontWeight;
   fontStyle?: 'italic';
   textTransform?: TextTransform;
