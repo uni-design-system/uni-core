@@ -139,16 +139,32 @@ export const BaseTheme: Theme = {
   buttons: {
     elevated: {
       color: 'surface',
+      verticalPadding: 12,
+      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
+      horizontalPadding: 24,
+      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
       shadowElevation: 'raised'
     },
     filled: {
-      color: 'primary'
+      color: 'primary',
+      verticalPadding: 12,
+      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
+      horizontalPadding: 24,
+      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
     },
     'filled-secondary': {
-      color: 'secondary'
+      color: 'secondary',
+      verticalPadding: 12,
+      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
+      horizontalPadding: 24,
+      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
     },
     outlined: {
       color: 'transparent',
+      verticalPadding: 12,
+      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
+      horizontalPadding: 24,
+      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
       border: {
         colorAll: 'primary',
         widthAll: 1
@@ -156,13 +172,21 @@ export const BaseTheme: Theme = {
     },
     text: {
       color: 'transparent',
+      verticalPadding: 12,
+      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
+      horizontalPadding: 16,
+      horizontalPaddings: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
     },
     icon: {
       color: 'transparent',
+      verticalPadding: 12,
+      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
+      horizontalPadding: 16,
+      horizontalPaddings: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
     },
     'floating-action': {
       color: 'secondary',
-      shadowElevation: 'raised'
+      shadowElevation: 'navigation'
     }
   }
 }
