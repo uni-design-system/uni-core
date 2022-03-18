@@ -2,14 +2,14 @@ import { BackgroundType } from '../background';
 import { BorderWidth } from '../border';
 import { ColorToken } from '../color';
 import { Apply, HorizontalAlign, RadiusApply, Size } from '../core.types';
-import { ShadowStyle } from '../shadow';
+import { ShadowDefinition } from '../shadow';
 
 export interface ContainerProps {
   maxWidth?: number;
   align?: HorizontalAlign;
 
   backgroundType?: BackgroundType;
-  shadowStyle?: ShadowStyle;
+  shadow?: ShadowDefinition;
 
   backgroundColor?: ColorToken;
   textColor?: ColorToken;

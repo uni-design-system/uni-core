@@ -31,7 +31,8 @@ export const BaseTheme: Theme = {
     'surface-tint': '#6750A4',
     'inverse-surface': '#313033',
     'inverse-on-surface': '#F4EFF4',
-    'inverse-primary': '#D0BCFF'
+    'inverse-primary': '#D0BCFF',
+    'transparent': 'rgba(0,0,0,0)'
   },
   typography: {
     'headline-1': {
@@ -133,6 +134,35 @@ export const BaseTheme: Theme = {
       fontFamily: 'Roboto',
       fontSize: 14,
       fontStyle: 'italic'
+    }
+  },
+  buttons: {
+    elevated: {
+      color: 'surface',
+      shadowElevation: 'raised'
+    },
+    filled: {
+      color: 'primary'
+    },
+    'filled-secondary': {
+      color: 'secondary'
+    },
+    outlined: {
+      color: 'transparent',
+      border: {
+        colorAll: 'primary',
+        widthAll: 1
+      }
+    },
+    text: {
+      color: 'transparent',
+    },
+    icon: {
+      color: 'transparent',
+    },
+    'floating-action': {
+      color: 'secondary',
+      shadowElevation: 'raised'
     }
   }
 }

@@ -12,5 +12,6 @@ export interface Button {
   horizontalPaddings?: Record<Size, number>;
   verticalPadding?: number;
   verticalPaddings?: Record<Size, number>;
-  border: Border;
+  border?: Border;
+  shadowElevation?: ShadowElevation
 }

@@ -118,4 +118,5 @@ export type ColorToken =
   | 'inverse-surface'
   | 'inverse-on-surface'
   | 'inverse-primary'
+  | 'transparent'
   ;

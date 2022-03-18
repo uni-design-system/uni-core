@@ -1,5 +1,6 @@
 import { TextRole, TextStyle } from '../typography';
 import { ColorToken } from '../color';
+import { Button, ButtonType } from '../button';
 
 export interface ThemeProps {
   themeId?: string;
@@ -11,5 +12,6 @@ export interface Theme {
   name: string;
   id: string;
   colors: Record<ColorToken, string>;
-  typography: Record<TextRole, TextStyle>
+  typography: Record<TextRole, TextStyle>;
+  buttons: Record<ButtonType, Button>;
 }
