@@ -169,10 +169,8 @@ export const BaseTheme: Theme = {
       horizontalPadding: 24,
       horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
       borderRadius: 100,
-      border: {
-        colorAll: 'primary',
-        widthAll: 1
-      }
+      borderColor: 'primary',
+      borderWidth: 1
     },
     text: {
       color: 'transparent',
