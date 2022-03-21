@@ -5,6 +5,5 @@ export type ShadowElevation =
   | 'raised'
   | 'focussed'
   | 'navigation'
-  | 'drawer'
   | 'modal'
   ;

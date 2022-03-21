@@ -1,6 +1,15 @@
 import { ShadowDefinition } from './shadow.model';
 import { ShadowElevation } from './shadow.types';
 
+export const ShadowCssMap: Record<ShadowElevation, string> = {
+  flat: 'none',
+  pressed: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+  raised: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+  focussed: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+  navigation: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
+  modal: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)'
+}
+
 // https://material.io/archive/guidelines/resources/shadows.html#shadows-sketch
 export const ShadowMap: Record<ShadowElevation, ShadowDefinition> = {
   flat: {
@@ -100,26 +109,6 @@ export const ShadowMap: Record<ShadowElevation, ShadowDefinition> = {
       opacity: 20,
       offset: 3,
       blur: 5,
-      spread: 0
-    }
-  },
-  drawer: {
-    umbra: {
-      opacity: 14,
-      offset: 9,
-      blur: 12,
-      spread: 1
-    },
-    penumbra: {
-      opacity: 12,
-      offset: 3,
-      blur: 16,
-      spread: 2
-    },
-    ambient: {
-      opacity: 20,
-      offset: 5,
-      blur: 6,
       spread: 0
     }
   },
