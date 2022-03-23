@@ -9,7 +9,7 @@ export type FontWeight =
   | 'light'
   | 'normal' // Regular
   | 'medium'
-  | 'semi-bold' // Demi Bold)
+  | 'semi-bold' // Demi Bold
   | 'bold' // Ultra Bold
   | 'extra-bold'
   | 'black' // Heavy
@@ -20,17 +20,19 @@ export type FontWeight =
 export type placement = 'overline' | 'title' | 'underline' | 'body' | 'label' | 'note' | 'footer';
 
 export type TextRole =
-  | 'display-1'
-  | 'display-2'
-  | 'display-3'
-  | 'headline-1'
-  | 'headline-2'
-  | 'headline-3'
+  | 'display-large'
+  | 'display-medium'
+  | 'display-small'
+  | 'headline-large'
+  | 'headline-medium'
+  | 'headline-small'
+  | 'title-large'
+  | 'title-medium'
+  | 'title-small'
   | 'body-1-long'
   | 'body-1-short'
   | 'body-2-long'
   | 'body-2-short'
-  | 'title'
   | 'subtitle-1'
   | 'subtitle-2'
   | 'label'

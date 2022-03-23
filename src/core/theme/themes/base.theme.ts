@@ -35,36 +35,62 @@ export const BaseTheme: Theme = {
     'transparent': 'rgba(0,0,0,0)'
   },
   typography: {
-    'display-1': {
+    'display-large': {
       fontFamily: 'Red Hat Display',
-      fontSize: 96,
-      fontWeight: 'light',
-      letterSpacing: -1.5
+      fontSize: 57,
+      lineHeight: 64,
+      fontWeight: 'normal',
+      letterSpacing: -0.25
     },
-    'display-2': {
+    'display-medium': {
       fontFamily: 'Red Hat Display',
-      fontSize: 60,
-      fontWeight: 'light',
-      letterSpacing: -0.1
+      fontSize: 45,
+      lineHeight: 52,
+      fontWeight: 'normal'
     },
-    'display-3': {
+    'display-small': {
       fontFamily: 'Red Hat Display',
-      fontSize: 48,
+      fontSize: 36,
+      lineHeight: 44,
+      fontWeight: 'normal'
     },
-    'headline-1': {
+    'headline-large': {
       fontFamily: 'Red Hat Display',
-      fontSize: 34,
-      letterSpacing: 0.25
+      fontSize: 32,
+      lineHeight: 40,
+      fontWeight: 'normal'
     },
-    'headline-2': {
+    'headline-medium': {
       fontFamily: 'Red Hat Display',
-      fontSize: 24
+      fontSize: 28,
+      lineHeight: 36,
+      fontWeight: 'normal'
     },
-    'headline-3': {
+    'headline-small': {
       fontFamily: 'Red Hat Display',
-      fontSize: 20,
+      fontSize: 24,
+      lineHeight: 32,
+      fontWeight: 'normal'
+    },
+    'title-large': {
+      fontFamily: 'Red Hat Display',
+      fontSize: 22,
+      lineHeight: 28,
+      fontWeight: 'normal'
+    },
+    'title-medium': {
+      fontFamily: 'Red Hat Display',
+      fontSize: 16,
+      lineHeight: 24,
       fontWeight: 'medium',
       letterSpacing: 0.15
+    },
+    'title-small': {
+      fontFamily: 'Red Hat Display',
+      fontWeight: 'medium',
+      fontSize: 14,
+      lineHeight: 20,
+      letterSpacing: 0.1
     },
     'body-1-long': {
       fontFamily: 'Roboto',
@@ -85,10 +111,6 @@ export const BaseTheme: Theme = {
       fontFamily: 'Roboto',
       fontSize: 14,
       lineHeight: 20
-    },
-    title: {
-      fontFamily: 'Red Hat Display',
-      fontSize: 48
     },
     'subtitle-1': {
       fontFamily: 'Red Hat Display',
