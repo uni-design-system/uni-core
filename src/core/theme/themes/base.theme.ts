@@ -131,7 +131,7 @@ export const BaseTheme: Theme = {
       fontFamily: 'Red Hat Display',
       fontSize: 14,
       fontWeight: 'medium',
-      textTransform: 'uppercase'
+      textTransform: 'capitalize'
     },
     caption: {
       fontFamily: 'Roboto',
