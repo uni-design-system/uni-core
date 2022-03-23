@@ -33,7 +33,7 @@ export const DarkTheme: Theme = {
     'surface-tint': '#D0BCFF',
     'inverse-surface': '#E6E1E5',
     'inverse-on-surface': '#313033',
-    'inverse-primary': '#6750A4',
+    'inverse-on-surface-primary': '#6750A4',
     'transparent': 'rgba(0,0,0,0)'
   }
 }

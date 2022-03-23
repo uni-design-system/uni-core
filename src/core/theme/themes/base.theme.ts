@@ -31,36 +31,36 @@ export const BaseTheme: Theme = {
     'surface-tint': '#6750A4',
     'inverse-surface': '#313033',
     'inverse-on-surface': '#F4EFF4',
-    'inverse-primary': '#D0BCFF',
+    'inverse-on-surface-primary': '#D0BCFF',
     'transparent': 'rgba(0,0,0,0)'
   },
   typography: {
-    'headline-1': {
+    'display-1': {
       fontFamily: 'Red Hat Display',
       fontSize: 96,
       fontWeight: 'light',
       letterSpacing: -1.5
     },
-    'headline-2': {
+    'display-2': {
       fontFamily: 'Red Hat Display',
       fontSize: 60,
       fontWeight: 'light',
       letterSpacing: -0.1
     },
-    'headline-3': {
+    'display-3': {
       fontFamily: 'Red Hat Display',
       fontSize: 48,
     },
-    'headline-4': {
+    'headline-1': {
       fontFamily: 'Red Hat Display',
       fontSize: 34,
       letterSpacing: 0.25
     },
-    'headline-5': {
+    'headline-2': {
       fontFamily: 'Red Hat Display',
       fontSize: 24
     },
-    'headline-6': {
+    'headline-3': {
       fontFamily: 'Red Hat Display',
       fontSize: 20,
       fontWeight: 'medium',

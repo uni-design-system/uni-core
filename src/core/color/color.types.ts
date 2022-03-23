@@ -90,33 +90,49 @@ export type ColorModes =
   ;
 
 export type ColorToken =
+  | ElementColorToken
+  | ContainerColorToken
+  | ContentColorToken
+  | UtilityColorToken
+  ;
+
+export type ElementColorToken =
   | 'primary'
-  | 'on-primary'
-  | 'primary-container'
-  | 'on-primary-container'
   | 'secondary'
-  | 'on-secondary'
-  | 'secondary-container'
-  | 'on-secondary-container'
   | 'tertiary'
-  | 'on-tertiary'
-  | 'tertiary-container'
-  | 'on-tertiary-container'
   | 'error'
-  | 'on-error'
+  ;
+
+export type ContainerColorToken =
+  | 'primary-container'
+  | 'secondary-container'
+  | 'tertiary-container'
   | 'error-container'
-  | 'on-error-container'
   | 'background'
-  | 'on-background'
   | 'surface'
-  | 'on-surface'
   | 'surface-variant'
+  | 'inverse-surface'
+  ;
+
+export type ContentColorToken =
+  | 'on-primary'
+  | 'on-primary-container'
+  | 'on-secondary'
+  | 'on-secondary-container'
+  | 'on-tertiary'
+  | 'on-tertiary-container'
+  | 'on-error'
+  | 'on-error-container'
+  | 'on-background'
+  | 'on-surface'
   | 'on-surface-variant'
+  | 'inverse-on-surface'
+  | 'inverse-on-surface-primary'
+  ;
+
+export type UtilityColorToken =
   | 'outline'
   | 'shadow'
   | 'surface-tint'
-  | 'inverse-surface'
-  | 'inverse-on-surface'
-  | 'inverse-primary'
   | 'transparent'
   ;

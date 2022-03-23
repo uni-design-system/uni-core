@@ -20,12 +20,12 @@ export type FontWeight =
 export type placement = 'overline' | 'title' | 'underline' | 'body' | 'label' | 'note' | 'footer';
 
 export type TextRole =
+  | 'display-1'
+  | 'display-2'
+  | 'display-3'
   | 'headline-1'
   | 'headline-2'
   | 'headline-3'
-  | 'headline-4'
-  | 'headline-5'
-  | 'headline-6'
   | 'body-1-long'
   | 'body-1-short'
   | 'body-2-long'
