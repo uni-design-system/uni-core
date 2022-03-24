@@ -115,46 +115,55 @@ export const BaseTheme: Theme = {
     'subtitle-1': {
       fontFamily: 'Red Hat Display',
       fontSize: 16,
+      lineHeight: 24,
       letterSpacing: 0.15
     },
     'subtitle-2': {
       fontFamily: 'Red Hat Display',
       fontSize: 14,
+      lineHeight: 20,
       fontWeight: 'medium',
       letterSpacing: 0.1
     },
     label: {
       fontFamily: 'Roboto',
-      fontSize: 14
+      fontSize: 14,
+      lineHeight: 20
     },
     button: {
       fontFamily: 'Red Hat Display',
       fontSize: 14,
+      lineHeight: 20,
       fontWeight: 'medium',
       textTransform: 'capitalize'
     },
     caption: {
       fontFamily: 'Roboto',
       fontSize: 12,
+      lineHeight: 18,
       letterSpacing: 0.4
     },
     overline: {
       fontFamily: 'Red Hat Display',
       fontSize: 10,
+      lineHeight: 18,
       letterSpacing: 1.5,
       textTransform: 'uppercase'
     },
     paragraph: {
       fontFamily: 'Roboto',
-      fontSize: 16
+      fontSize: 16,
+      lineHeight: 24
     },
     quote: {
       fontFamily: 'Roboto',
-      fontSize: 16
+      fontSize: 16,
+      lineHeight: 24
     },
     note: {
       fontFamily: 'Roboto',
       fontSize: 14,
+      lineHeight: 22,
       fontStyle: 'italic'
     }
   },

@@ -4,6 +4,7 @@ import { Size } from '../core.types';
 export interface TextStyle {
   fontFamily: string;
   fontSize: number;
+  lineHeight: number;
   fontScale?: Record<Size, number>
   fontWeight?: FontWeight;
   fontStyle?: 'italic';
@@ -11,7 +12,6 @@ export interface TextStyle {
   textDecoration?: TextDecoration;
   letterSpacing?: number;
   textIndent?: number;
-  lineHeight?: number;
   wordSpacing?: number;
   whiteSpace?: 'nowrap';
 }
