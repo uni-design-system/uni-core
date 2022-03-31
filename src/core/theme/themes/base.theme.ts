@@ -1,4 +1,18 @@
 import { Theme } from '../theme.model';
+import { Button } from '../../button';
+import { Container } from '../../container';
+
+const BaseButton: Partial<Button> = {
+  verticalPadding: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
+  horizontalPadding: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
+  borderRadius: 100,
+}
+
+const BaseContainer: Partial<Container> = {
+  borderRadii: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
+  padding: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
+  contentSpacing: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
+}
 
 export const BaseTheme: Theme = {
   id: 'BaseTheme',
@@ -169,60 +183,59 @@ export const BaseTheme: Theme = {
   },
   buttons: {
     elevated: {
+      ...BaseButton,
       color: 'surface',
-      verticalPadding: 12,
-      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
-      horizontalPadding: 24,
-      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
-      borderRadius: 100,
       shadowElevation: 'raised'
     },
     filled: {
+      ...BaseButton,
       color: 'primary',
-      verticalPadding: 12,
-      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
-      horizontalPadding: 24,
-      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
-      borderRadius: 100
     },
     'filled-secondary': {
+      ...BaseButton,
       color: 'secondary',
-      verticalPadding: 12,
-      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
-      horizontalPadding: 24,
-      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
-      borderRadius: 100
     },
     outlined: {
+      ...BaseButton,
       color: 'transparent',
-      verticalPadding: 12,
-      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
-      horizontalPadding: 24,
-      horizontalPaddings: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
-      borderRadius: 100,
       borderColor: 'primary',
       borderWidth: 1
     },
     text: {
+      ...BaseButton,
       color: 'transparent',
-      verticalPadding: 12,
-      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
-      horizontalPadding: 16,
-      horizontalPaddings: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
-      borderRadius: 100
     },
     icon: {
+      ...BaseButton,
       color: 'transparent',
-      verticalPadding: 12,
-      verticalPaddings: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
-      horizontalPadding: 16,
-      horizontalPaddings: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
-      borderRadius: 100
     },
     'floating-action': {
+      ...BaseButton,
       color: 'secondary',
       borderRadius: 100,
       shadowElevation: 'navigation',
+    }
+  },
+  containers: {
+    card: {
+      ...BaseContainer,
+      color: 'surface',
+      contentColor: 'on-surface',
+      shadowMode: 'interactive'
+    },
+    screen: {
+      ...BaseContainer,
+      color: 'background',
+      contentColor: 'on-background'
+    },
+    modal: {
+      ...BaseContainer,
+      borderRadii: { xs: 16, sm: 22, md: 28, lg: 32, xl: 38 },
+      color: 'surface',
+      contentColor: 'on-surface',
+      shadowMode: 'static',
+      shadowElevation: 'modal',
+      maxWidth: 560
     }
   }
 }

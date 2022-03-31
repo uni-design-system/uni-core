@@ -1,6 +1,7 @@
 import { TextRole, TextStyle } from '../typography';
 import { ColorToken } from '../color';
 import { Button, ButtonType } from '../button';
+import { Container, ContainerType } from '../container';
 
 export interface ThemeProps {
   themeId?: string;
@@ -14,4 +15,5 @@ export interface Theme {
   colors: Record<ColorToken, string>;
   typography: Record<TextRole, TextStyle>;
   buttons: Record<ButtonType, Button>;
+  containers: Record<ContainerType, Container>;
 }
