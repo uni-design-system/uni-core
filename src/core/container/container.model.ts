@@ -1,18 +1,29 @@
 import { BackgroundType } from '../background';
 import { BorderWidth } from '../border';
-import { ColorToken } from '../color';
+import { ColorToken, ContainerColorToken, ContentColorToken } from '../color';
 import { Apply, HorizontalAlign, RadiusApply, Size } from '../core.types';
-import { ShadowDefinition } from '../shadow';
+import { ShadowElevation, ShadowMode } from '../shadow';
 
-export interface ContainerProps {
+export interface Container {
+
   maxWidth?: number;
   align?: HorizontalAlign;
 
-  backgroundType?: BackgroundType;
-  shadow?: ShadowDefinition;
+  contentSpacing?: Record<Size, number>;
 
-  backgroundColor?: ColorToken;
-  textColor?: ColorToken;
+  topPadding?: Record<Size, number>;
+  padding?: Record<Size, number>;
+  spacing?: Record<Size, number>;
+
+  backgroundType?: BackgroundType;
+
+  borderRadii?: Record<Size, number>;
+
+  shadowMode?: ShadowMode;
+  shadowElevation?: ShadowElevation
+
+  color: ContainerColorToken;
+  contentColor: ContentColorToken;
 
   blur?: {
     amount?: number;
@@ -30,6 +41,8 @@ export interface ContainerProps {
     apply?: RadiusApply;
   };
 
+
+
   gradient?: {
     degree?: number;
     colors?: string[];
@@ -45,6 +58,6 @@ export interface ContainerProps {
     top?: Record<Size, number>;
   };
 
-  Spacings?: Record<Size, number>;
-  TopSpacings?: Record<Size, number>;
+
+
 }
