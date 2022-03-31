@@ -3,6 +3,15 @@ export type IconStyle =
   | 'outline'
   ;
 
+export type ToggleableIcon =
+  | 'radio'
+  | 'check'
+  | 'like'
+  | 'favorite'
+  | 'lock'
+  | 'view'
+  ;
+
 export type IconToken =
   | 'alert'
   | 'warn'
