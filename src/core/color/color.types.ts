@@ -112,6 +112,7 @@ export type ContainerColorToken =
   | 'surface'
   | 'surface-variant'
   | 'inverse-surface'
+  | 'transparent'
   ;
 
 export type ContentColorToken =
