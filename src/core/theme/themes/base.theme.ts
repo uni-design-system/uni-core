@@ -2,16 +2,19 @@ import { Theme } from '../theme.model';
 import { Button } from '../../button';
 import { Container } from '../../container';
 
-const BaseButton: Partial<Button> = {
+const BaseButton: Button = {
   verticalPadding: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
   horizontalPadding: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
   borderRadius: 100,
+  color: 'primary-container'
 }
 
-const BaseContainer: Partial<Container> = {
+const BaseContainer: Container = {
   borderRadii: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
   padding: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
   contentSpacing: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
+  color: 'primary-container',
+  contentColor: 'on-primary-container'
 }
 
 export const BaseTheme: Theme = {
@@ -185,6 +188,7 @@ export const BaseTheme: Theme = {
     elevated: {
       ...BaseButton,
       color: 'surface',
+
       shadowElevation: 'raised'
     },
     filled: {
