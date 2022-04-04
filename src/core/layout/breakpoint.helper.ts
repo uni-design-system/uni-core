@@ -5,10 +5,17 @@ export function getScreenSize(width: number): Size {
 
   if (!width) return 'md';
 
-  ['xs', 'sm', 'md', 'lg'].forEach(key => {
-    const breakpoint = Breakpoints[key as Size];
-    if (width < breakpoint) return key;
-  })
+  if (width < Breakpoints['xs'])
+    return 'xs';
+
+  if (width < Breakpoints['sm'])
+    return 'sm';
+
+  if (width < Breakpoints['md'])
+    return 'md';
+
+  if (width < Breakpoints['lg'])
+    return 'lg';
 
   return 'xl'
 }
