@@ -10,8 +10,8 @@ export interface Button {
   borderColor?: ColorToken;
   borderRadius?: number;
   borderRadii?: Record<Size, number>;
-  horizontalPadding?: Record<Size, number>;
-  verticalPadding?: Record<Size, number>;
+  horizontalPadding: Record<Size, number>;
+  verticalPadding: Record<Size, number>;
   border?: Border;
-  shadowElevation?: ShadowElevation
+  shadowElevation?: ShadowElevation;
 }
