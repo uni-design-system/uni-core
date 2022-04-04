@@ -1,11 +1,11 @@
 import { FontWeight, TextDecoration, TextTransform } from './typography.types';
-import { Size } from '../core.types';
+import { SizeMap } from '../core.types';
 
 export interface TextStyle {
   fontFamily: string;
   fontSize: number;
   lineHeight: number;
-  fontScale?: Record<Size, number>
+  fontScale?: SizeMap
   fontWeight?: FontWeight;
   fontStyle?: 'italic';
   textTransform?: TextTransform;

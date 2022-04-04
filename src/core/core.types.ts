@@ -23,6 +23,8 @@ export type Size =
   | 'xl'
   ;
 
+export type SizeMap = Record<Size, number>;
+
 export type HorizontalBinary =
   | 'left'
   | 'right'

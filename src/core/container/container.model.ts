@@ -1,7 +1,7 @@
 import { BackgroundType } from '../background';
 import { BorderWidth } from '../border';
 import { ColorToken, ContainerColorToken, ContentColorToken } from '../color';
-import { Apply, HorizontalAlign, RadiusApply, Size } from '../core.types';
+import { Apply, HorizontalAlign, RadiusApply, Size, SizeMap } from '../core.types';
 import { ShadowElevation, ShadowMode } from '../shadow';
 
 export interface Container {
@@ -9,15 +9,15 @@ export interface Container {
   maxWidth?: number;
   align?: HorizontalAlign;
 
-  contentSpacing?: Record<Size, number>;
+  contentSpacing?: SizeMap;
 
-  topPadding?: Record<Size, number>;
-  padding?: Record<Size, number>;
-  spacing?: Record<Size, number>;
+  topPadding?: SizeMap;
+  padding?: SizeMap;
+  spacing?: SizeMap;
 
   backgroundType?: BackgroundType;
 
-  borderRadii?: Record<Size, number>;
+  borderRadii?: SizeMap;
 
   shadowMode?: ShadowMode;
   shadowElevation?: ShadowElevation
@@ -53,9 +53,9 @@ export interface Container {
   };
 
   margin?: {
-    horizontal?: Record<Size, number>;
-    bottom?: Record<Size, number>;
-    top?: Record<Size, number>;
+    horizontal?: SizeMap;
+    bottom?: SizeMap;
+    top?: SizeMap;
   };
 
 

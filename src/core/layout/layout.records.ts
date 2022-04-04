@@ -1,6 +1,6 @@
-import { Size } from '../core.types';
+import { SizeMap } from '../core.types';
 
-export const Breakpoints: Record<Size, number> = {
+export const Breakpoints: SizeMap = {
   xs: 600,
   sm: 960,
   md: 1264,
