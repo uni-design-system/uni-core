@@ -1,7 +1,7 @@
 {
   "name": "@uni-design-system/uni-core",
   "description": "UNI Design System core dependencies.",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uni-design-system/uni-core.git"
