@@ -1,5 +1,3 @@
 export * from './layout.types';
-export * from './breakpoint.helper';
-export * from './breakpoint.model';
-export * from './layout.records';
-export * from './layout.model'
+export * from './layout.helper';
+export * from './layout.model';

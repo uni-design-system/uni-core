@@ -1,6 +1,6 @@
 import { Size } from '../core.types';
 
 export interface Layout {
-  deviseSize: Size;
+  deviceSize: Size;
   orientation: 'portrait' | 'landscape';
 }
