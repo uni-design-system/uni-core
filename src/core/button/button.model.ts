@@ -5,6 +5,7 @@ import { Border } from '../border';
 
 export interface Button {
   color: ColorToken;
+  contentColor: ColorToken;
   elevation?: ShadowElevation;
   borderWidth?: number;
   borderColor?: ColorToken;

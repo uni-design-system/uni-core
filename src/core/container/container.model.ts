@@ -8,22 +8,18 @@ export interface Container {
 
   maxWidth?: number;
   align?: HorizontalAlign;
-
-  contentSpacing?: SizeMap;
-
   topPadding?: SizeMap;
-  padding?: SizeMap;
+  bottomPadding?: SizeMap;
+  horizontalPadding?: SizeMap;
   spacing?: SizeMap;
-
+  contentSpacing?: SizeMap;
   backgroundType?: BackgroundType;
-
   borderRadii?: SizeMap;
-
   shadowMode?: ShadowMode;
   shadowElevation?: ShadowElevation
-
   color: ContainerColorToken;
   contentColor: ContentColorToken;
+
 
   blur?: {
     amount?: number;

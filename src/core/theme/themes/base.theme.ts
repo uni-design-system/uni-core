@@ -3,18 +3,19 @@ import { Button } from '../../button';
 import { Container } from '../../container';
 
 const BaseButton: Button = {
-  verticalPadding: { xs: 4, sm: 8, md: 12, lg: 16, xl: 20 },
-  horizontalPadding: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
   borderRadius: 100,
-  color: 'primary-container'
+  color: 'primary-container',
+  contentColor: 'on-primary-container',
+  verticalPadding: { xs: 5, sm: 8, md: 12, lg: 16, xl: 20 },
+  horizontalPadding: { xs: 8, sm: 12, md: 18, lg: 24, xl: 30 },
 }
 
 const BaseContainer: Container = {
-  borderRadii: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
-  padding: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
-  contentSpacing: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
   color: 'primary-container',
-  contentColor: 'on-primary-container'
+  contentColor: 'on-primary-container',
+  borderRadii: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
+  horizontalPadding: { xs: 12, sm: 18, md: 24, lg: 30, xl: 36 },
+  contentSpacing: { xs: 8, sm: 12, md: 16, lg: 20, xl: 24 },
 }
 
 export const BaseTheme: Theme = {
@@ -188,7 +189,7 @@ export const BaseTheme: Theme = {
     elevated: {
       ...BaseButton,
       color: 'surface',
-
+      contentColor: 'on-surface',
       shadowElevation: 'raised'
     },
     filled: {
@@ -198,26 +199,33 @@ export const BaseTheme: Theme = {
     'filled-secondary': {
       ...BaseButton,
       color: 'secondary',
+      contentColor: 'on-secondary'
     },
     outlined: {
       ...BaseButton,
       color: 'transparent',
       borderColor: 'primary',
+      contentColor: 'on-primary',
       borderWidth: 1
     },
     text: {
       ...BaseButton,
       color: 'transparent',
+      contentColor: 'on-surface'
     },
     icon: {
       ...BaseButton,
       color: 'transparent',
+      contentColor: 'on-surface'
     },
     'floating-action': {
       ...BaseButton,
       color: 'secondary',
-      borderRadius: 100,
+      contentColor: 'on-secondary',
+      borderRadii: { xs: 5, sm: 8, md: 12, lg: 16, xl: 12 },
       shadowElevation: 'navigation',
+      verticalPadding: { xs: 8, sm: 12, md: 18, lg: 24, xl: 30 },
+      horizontalPadding: { xs: 8, sm: 12, md: 18, lg: 24, xl: 30 },
     }
   },
   containers: {
