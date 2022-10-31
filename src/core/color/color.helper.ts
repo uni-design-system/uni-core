@@ -1,16 +1,15 @@
-import { Color } from './color.model';
-import { colorCategories, colorRoles, roleHues } from './color.types';
+import { HSLA, UniColor } from './color.model';
+import { CategoryLightness, CategorySaturation, RoleHues } from './color.types';
+import { randomRangeValue } from './color.utils';
 
-export function hslColor(c: Color): string {
-  return `hsl(${c.hue}, ${c.saturation}, ${c.lightness}, ${c.alpha})`;
+export function hslaToString({ hue, saturation, lightness, alpha }: HSLA): string {
+  return `hsla(${hue}, ${saturation}, ${lightness}, ${alpha})`;
 }
 
-export function roleColor(r: colorRoles): string {
+export function uniColor({ role, category, scheme, alpha = 1 }: UniColor): string {
+  const hue = randomRangeValue(RoleHues[role]);
+  const saturation = randomRangeValue(CategorySaturation[category]);
+  const lightness = randomRangeValue(CategoryLightness[category]);
 
-  const hue = roleHues[r].default;
-  const role: colorRoles = r;
-  const alpha = 1;
-  const category: colorCategories = 'jewel';
-
-  return hslColor({ role, category, hue, alpha });
+  return hslaToString({ hue, saturation, lightness, alpha });
 }
