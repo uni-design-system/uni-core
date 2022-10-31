@@ -6,7 +6,7 @@ export function hslaToString({ hue, saturation, lightness, alpha }: HSLA): strin
   return `hsla(${hue}, ${saturation}, ${lightness}, ${alpha})`;
 }
 
-export function uniColor({ role, category, scheme, alpha = 1 }: UniColor): string {
+export function uniColor({ role, category, alpha = 1 }: UniColor): string {
   const hue = randomRangeValue(RoleHues[role]);
   const saturation = randomRangeValue(CategorySaturation[category]);
   const lightness = randomRangeValue(CategoryLightness[category]);
