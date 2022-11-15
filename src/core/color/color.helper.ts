@@ -1,5 +1,5 @@
 import { HSLA, UniColor } from './color.model';
-import { CategoryLightness, CategorySaturation, RoleHues } from './color.types';
+import { CategoryLightness, CategorySaturation, RoleHues } from './color.records';
 import { randomRangeValue } from './color.utils';
 
 export function hslaToString({ hue, saturation, lightness, alpha = 1 }: HSLA): string {
