@@ -1,4 +1,4 @@
-import { ColorCategory, ColorRole, ColorScheme, colorStyles } from './color.types';
+import { ColorCategory, ColorRole, ColorScheme, ColorStyles } from './color.types';
 
 export interface UniColor {
   scheme: ColorScheme;
@@ -13,7 +13,7 @@ export interface Color {
   role?: ColorRole;
   category?: ColorCategory;
 
-  style?: colorStyles;
+  style?: ColorStyles;
 
   /* Gradients */
   GradientPosition?: GradientPosition;
@@ -41,9 +41,23 @@ export interface Range {
   default?: number;
 }
 
-export interface HSLA {
+export interface HSL {
   hue?: number;
   saturation?: number;
   lightness?: number;
   alpha?: number;
+}
+
+export interface HSLA extends HSL {
+  alpha?: number;
+}
+
+export interface RGB {
+  red: number;
+  green: number;
+  blue: number;
+}
+
+export interface RGBA extends RGB {
+  alpha: number;
 }

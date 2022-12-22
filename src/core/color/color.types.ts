@@ -6,7 +6,7 @@ export type ColorScheme = 'monochromatic' | 'analogous' | 'complimentary' | 'spl
 export type ColorCategory = 'jewel' | 'pastel' | 'earth' | 'neutral' | 'florescent' | 'shades';
 
 // Color Attributes
-export type colorStyles = 'solid' | 'transparent' | 'gradient';
+export type ColorStyles = 'solid' | 'transparent' | 'gradient';
 
 // Color Factory Output Types
 export type ColorOutput = 'HEX' | 'RGB' | 'RGBA' | 'HSL' | 'HSLA';
@@ -14,6 +14,7 @@ export type ColorOutput = 'HEX' | 'RGB' | 'RGBA' | 'HSL' | 'HSLA';
 // Variants used in element states, e.g. button
 export type ColorModes = 'base' | 'hover' | 'active' | 'disabled';
 
+//
 export type ColorRole = 'primary' | 'secondary' | 'tertiary' | 'inverse' | 'ghost';
 
 /*
