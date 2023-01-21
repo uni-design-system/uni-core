@@ -6,6 +6,10 @@ export function HSLAToString({ hue, saturation, lightness, alpha = 1 }: HSLA): s
   return `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})`;
 }
 
+export function RGBToString({ red, green, blue }: RGB): string {
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+
 export function uniColor({ role, category, alpha = 1 }: UniColor): string {
   const hue = randomRangeValue(RoleHues[role]);
   const saturation = randomRangeValue(CategorySaturation[category]);
@@ -27,3 +31,5 @@ export const RGBToHSL = ({ red, green, blue }: RGB): HSL => {
     lightness: (100 * (2 * l - s)) / 2,
   };
 };
+
+// Future Methods - https://codepen.io/jkantner/pen/VVEMRK
