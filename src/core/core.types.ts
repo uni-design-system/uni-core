@@ -63,3 +63,5 @@ export type RadiusApply =
   | 'all'
   | 'none'
   ;
+
+export type StrokeWidth = string | number;
