@@ -1,4 +1,4 @@
-import { Color } from '../color/color.model';
+import { Color } from '../color';
 import { MaskingShape } from './masking.types';
 
 export interface Masking {

@@ -4,7 +4,7 @@ import { BackgroundType } from './background.types';
 
 export interface Background {
   type: BackgroundType;
-  color: Color;
-  gradient: Gradient;
-  image: string;
+  color?: Color;
+  gradient?: Gradient;
+  image?: string;
 }
