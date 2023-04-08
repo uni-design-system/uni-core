@@ -48,8 +48,9 @@ export const BaseTheme: Theme = {
     shadow: '#000000',
     'surface-tint': '#6750A4',
     'inverse-surface': '#313033',
-    'inverse-on-surface': '#F4EFF4',
-    'inverse-on-surface-primary': '#D0BCFF',
+    'on-inverse-surface': '#F4EFF4',
+    'on-inverse-surface-primary': '#D0BCFF',
+    scrim: '#000000',
     transparent: 'rgba(0,0,0,0)',
   },
   typography: {

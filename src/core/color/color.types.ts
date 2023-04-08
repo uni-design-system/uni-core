@@ -44,6 +44,7 @@ export type ContainerColorToken =
   | 'surface'
   | 'surface-variant'
   | 'inverse-surface'
+  | 'scrim'
   | 'transparent';
 
 export type ContentColorToken =
@@ -58,5 +59,5 @@ export type ContentColorToken =
   | 'on-background'
   | 'on-surface'
   | 'on-surface-variant'
-  | 'inverse-on-surface'
-  | 'inverse-on-surface-primary';
+  | 'on-inverse-surface'
+  | 'on-inverse-surface-primary';
